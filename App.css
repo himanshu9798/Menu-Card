@@ -1,0 +1,880 @@
+/* .table1{
+    width: 500px;
+    margin-left: 400px;
+   
+    padding: 10px;
+    border-radius: 8px;
+    outline: 1px solid white;
+    box-shadow: 4px 4px 20px gray;
+    transition: background-color 8s,color 3s,transform 4s;
+    
+}
+.table1:hover{
+    background-color: purple;
+    color: white;
+    transform: skewX(15deg);
+}
+
+
+input{
+    width: 100%;
+    height: 20px;
+    outline: none;
+    transition: width 3s;
+    cursor: pointer;
+}
+
+select{
+    width: 101%;
+    height: 30px;
+    outline: none;
+    transition: width 3s;
+}
+
+input::placeholder {
+    color: #888;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 1; 
+  }
+  button{
+    margin-top: 10px;
+    text-align: center;
+    outline: 5px solid white;
+    border: none;
+    width: 100%;
+    box-shadow: 5px 5px  30px solid red;
+    border-radius: 10px;
+    cursor:pointer;
+    height: 30px;
+    transition: color 3s,background-color 5s;
+    font-size: larger;
+    font-weight: 800;
+  }
+  button:hover{
+    color: purple;
+    background-color: rgb(233, 49, 49);
+  }
+  table{
+    width: 100%;
+    margin-top: 40px;
+   
+    padding: 10px;
+    border-radius: 8px;
+    outline: 1px solid white;
+    box-shadow: 4px 4px 20px gray;
+    transition: background-color 8s,color 3s,;
+    
+}
+table:hover{
+    background-color: purple;
+    color: white;
+    
+}*/
+.menu {
+  width: 600px;
+
+  margin-left: 330px;
+
+  box-shadow: 5px 5px 30px gray;
+  color: #fffff0;
+  border-radius: 10px;
+  outline: 1px solid white;
+}
+
+.next {
+  font-size: 40px;
+  margin-left: 5%;
+  margin-top: 10%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+  color: purple;
+}
+.previous {
+  font-size: 40px;
+  margin-left: 70%;
+  margin-top: 10%;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+  color: purple;
+  transition: ;
+}
+.food {
+  width: 50%;
+  height: 120px;
+  font-size: 20px;
+  margin-left: 25%;
+  text-align: center;
+  position: relative;
+
+  top: -80px;
+
+  list-style: none;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+/* .food:hover {
+  background-color: aqua;
+  color: white;
+} */
+.order {
+  outline: 2px solid white;
+  width: 50%;
+  margin-left: 25%;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 2%;
+  /* margin-left: 1%; */
+  border: none;
+  /* border-radius: 10px; */
+  color: #fffff0;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px orange;
+  transition: width 3s;
+  animation: circle 3s ease-in-out infinite; /* Link the keyframes animation */
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px orange;
+  position: absolute; /* To allow it to move freely across the page */
+  animation: circle 10s infinite ease-in-out; /* Adjust the duration as needed */
+}
+
+@keyframes circle {
+  0% {
+    left: -100px;
+    top: 0;
+  }
+  10% {
+    left: 100px;
+    top: 0;
+  }
+  20% {
+    left: 200px;
+    top: 0;
+  }
+  30% {
+    left: 500px;
+    top: 100px;
+  }
+  40% {
+    left: 700px;
+    top: 200px;
+  }
+  50% {
+    left: 700px;
+    top: 400px;
+  }
+  60% {
+    left: 900px;
+    top: 500px;
+  }
+  70% {
+    left: 200px;
+    top: 600px;
+  }
+  80% {
+    left: 0;
+    top: 500px;
+  }
+  90% {
+    left: 0;
+    top: 200px;
+  }
+  100% {
+    left: -100px;
+    top: 0;
+  }
+}
+
+.circle:hover {
+  width: 100px;
+}
+.circle1 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px orange;
+  position: absolute;
+  animation: circle1 10s infinite ease-in-out;
+}
+
+@keyframes circle1 {
+  0% {
+    left: -100px;
+    top: 0;
+  }
+  20% {
+    left: 200px;
+    top: 50px;
+  }
+  40% {
+    left: 400px;
+    top: 150px;
+  }
+  60% {
+    left: 600px;
+    top: 300px;
+  }
+  80% {
+    left: 500px;
+    top: 500px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+.circle2 {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px lime;
+  position: absolute;
+  animation: circle2 12s infinite ease-in-out;
+}
+
+@keyframes circle2 {
+  0% {
+    left: -100px;
+    top: 100px;
+  }
+  25% {
+    left: 300px;
+    top: 150px;
+  }
+  50% {
+    left: 500px;
+    top: 50px;
+  }
+  75% {
+    left: 700px;
+    top: 200px;
+  }
+  100% {
+    left: -100px;
+    top: 100px;
+  }
+}
+
+.circle3 {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px lightblue;
+  position: absolute;
+  animation: circle3 15s infinite ease-in-out;
+}
+
+@keyframes circle3 {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  30% {
+    left: 300px;
+    top: 400px;
+  }
+  60% {
+    left: 600px;
+    top: 100px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+.circle4 {
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px violet;
+  position: absolute;
+  animation: circle4 18s infinite ease-in-out;
+}
+
+@keyframes circle4 {
+  0% {
+    left: 200px;
+    top: -100px;
+  }
+  15% {
+    left: 400px;
+    top: 50px;
+  }
+  30% {
+    left: 600px;
+    top: 200px;
+  }
+  45% {
+    left: 700px;
+    top: 400px;
+  }
+  60% {
+    left: 500px;
+    top: 600px;
+  }
+  75% {
+    left: 200px;
+    top: 500px;
+  }
+  100% {
+    left: 200px;
+    top: -100px;
+  }
+}
+.square1 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  animation: square1 10s infinite ease-in-out;
+}
+
+@keyframes square1 {
+  0% {
+    left: -100px;
+    top: 0;
+  }
+  50% {
+    left: 50%;
+    top: 100px;
+  }
+  100% {
+    left: 100%;
+    top: 0;
+  }
+}
+
+.square2 {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  position: absolute;
+  animation: square2 12s infinite ease-in-out;
+}
+
+@keyframes square2 {
+  0% {
+    left: -100px;
+    top: 100px;
+  }
+  25% {
+    left: 30%;
+    top: 200px;
+  }
+  50% {
+    left: 60%;
+    top: 100px;
+  }
+  75% {
+    left: 90%;
+    top: 200px;
+  }
+  100% {
+    left: -100px;
+    top: 100px;
+  }
+}
+
+.square3 {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  position: absolute;
+  animation: square3 15s infinite ease-in-out;
+}
+
+@keyframes square3 {
+  0% {
+    left: -100px;
+    top: 200px;
+  }
+  50% {
+    left: 50%;
+    top: 150px;
+  }
+  100% {
+    left: 100%;
+    top: 200px;
+  }
+}
+
+.square4 {
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+  position: absolute;
+  animation: square4 18s infinite ease-in-out;
+}
+
+@keyframes square4 {
+  0% {
+    left: -100px;
+    top: 300px;
+  }
+  25% {
+    left: 40%;
+    top: 400px;
+  }
+  50% {
+    left: 80%;
+    top: 300px;
+  }
+  75% {
+    left: 90%;
+    top: 400px;
+  }
+  100% {
+    left: -100px;
+    top: 300px;
+  }
+}
+
+.square5 {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  position: absolute;
+  animation: square5 10s infinite ease-in-out;
+}
+
+@keyframes square5 {
+  0% {
+    left: -100px;
+    top: 400px;
+  }
+  50% {
+    left: 20%;
+    top: 300px;
+  }
+  100% {
+    left: 100%;
+    top: 400px;
+  }
+}
+
+.square6 {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  position: absolute;
+  animation: square6 12s infinite ease-in-out;
+}
+
+@keyframes square6 {
+  0% {
+    left: -100px;
+    top: 500px;
+  }
+  25% {
+    left: 50%;
+    top: 600px;
+  }
+  50% {
+    left: 70%;
+    top: 500px;
+  }
+  75% {
+    left: 90%;
+    top: 600px;
+  }
+  100% {
+    left: -100px;
+    top: 500px;
+  }
+}
+
+.square7 {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+  position: absolute;
+  animation: square7 14s infinite ease-in-out;
+}
+
+@keyframes square7 {
+  0% {
+    left: -100px;
+    top: 600px;
+  }
+  50% {
+    left: 50%;
+    top: 500px;
+  }
+  100% {
+    left: 100%;
+    top: 600px;
+  }
+}
+
+.square8 {
+  width: 50px;
+  height: 50px;
+  background-color: brown;
+  position: absolute;
+  animation: square8 16s infinite ease-in-out;
+}
+
+@keyframes square8 {
+  0% {
+    left: -100px;
+    top: 700px;
+  }
+  25% {
+    left: 40%;
+    top: 800px;
+  }
+  50% {
+    left: 60%;
+    top: 700px;
+  }
+  75% {
+    left: 80%;
+    top: 800px;
+  }
+  100% {
+    left: -100px;
+    top: 700px;
+  }
+}
+
+.square9 {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  position: absolute;
+  animation: square9 18s infinite ease-in-out;
+}
+
+@keyframes square9 {
+  0% {
+    left: -100px;
+    top: 800px;
+  }
+  50% {
+    left: 50%;
+    top: 700px;
+  }
+  100% {
+    left: 100%;
+    top: 800px;
+  }
+}
+
+.square10 {
+  width: 50px;
+  height: 50px;
+  background-color: teal;
+  position: absolute;
+  animation: square10 20s infinite ease-in-out;
+}
+
+@keyframes square10 {
+  0% {
+    left: -100px;
+    top: 900px;
+  }
+  25% {
+    left: 30%;
+    top: 1000px;
+  }
+  50% {
+    left: 60%;
+    top: 900px;
+  }
+  75% {
+    left: 90%;
+    top: 1000px;
+  }
+  100% {
+    left: -100px;
+    top: 900px;
+  }
+}
+/* Base styling for all boxes */
+.box {
+  position: absolute;
+  border-radius: 5px;
+  animation: moveBox 12s infinite ease-in-out, glow 2s infinite alternate;
+}
+
+/* Glowing effect keyframe */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Normal state */
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7); /* Glowing effect */
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Back to normal */
+  }
+}
+
+/* Keyframes for random movement of the boxes */
+@keyframes moveBox {
+  0% {
+    left: calc(100% * var(--start-x));
+    top: calc(100% * var(--start-y));
+  }
+  25% {
+    left: calc(100% * var(--mid-x));
+    top: calc(100% * var(--mid-y));
+  }
+  50% {
+    left: calc(100% * var(--end-x));
+    top: calc(100% * var(--end-y));
+  }
+  75% {
+    left: calc(100% * var(--start-x));
+    top: calc(100% * var(--start-y));
+  }
+  100% {
+    left: calc(100% * var(--mid-x));
+    top: calc(100% * var(--mid-y));
+  }
+}
+
+/* Different sizes for boxes */
+.box1 {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  --start-x: 0.1;
+  --start-y: 0.1;
+  --mid-x: 0.5;
+  --mid-y: 0.6;
+  --end-x: 0.8;
+  --end-y: 0.2;
+}
+.box2 {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  --start-x: 0.2;
+  --start-y: 0.3;
+  --mid-x: 0.4;
+  --mid-y: 0.4;
+  --end-x: 0.9;
+  --end-y: 0.2;
+}
+.box3 {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  --start-x: 0.3;
+  --start-y: 0.7;
+  --mid-x: 0.6;
+  --mid-y: 0.2;
+  --end-x: 0.7;
+  --end-y: 0.5;
+}
+.box4 {
+  width: 10px;
+  height: 10px;
+  background-color: purple;
+  --start-x: 0.4;
+  --start-y: 0.1;
+  --mid-x: 0.8;
+  --mid-y: 0.7;
+  --end-x: 0.1;
+  --end-y: 0.4;
+}
+.box5 {
+  width: 25px;
+  height: 25px;
+  background-color: orange;
+  --start-x: 0.5;
+  --start-y: 0.6;
+  --mid-x: 0.7;
+  --mid-y: 0.3;
+  --end-x: 0.3;
+  --end-y: 0.9;
+}
+.box6 {
+  width: 15px;
+  height: 15px;
+  background-color: pink;
+  --start-x: 0.2;
+  --start-y: 0.8;
+  --mid-x: 0.4;
+  --mid-y: 0.2;
+  --end-x: 0.6;
+  --end-y: 0.5;
+}
+.box7 {
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  --start-x: 0.3;
+  --start-y: 0.3;
+  --mid-x: 0.6;
+  --mid-y: 0.8;
+  --end-x: 0.2;
+  --end-y: 0.5;
+}
+.box8 {
+  width: 30px;
+  height: 30px;
+  background-color: teal;
+  --start-x: 0.7;
+  --start-y: 0.4;
+  --mid-x: 0.3;
+  --mid-y: 0.5;
+  --end-x: 0.8;
+  --end-y: 0.9;
+}
+.box9 {
+  width: 10px;
+  height: 10px;
+  background-color: brown;
+  --start-x: 0.6;
+  --start-y: 0.2;
+  --mid-x: 0.1;
+  --mid-y: 0.7;
+  --end-x: 0.9;
+  --end-y: 0.1;
+}
+.box10 {
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  --start-x: 0.8;
+  --start-y: 0.3;
+  --mid-x: 0.6;
+  --mid-y: 0.4;
+  --end-x: 0.1;
+  --end-y: 0.6;
+}
+.box11 {
+  width: 15px;
+  height: 15px;
+  background-color: lime;
+  --start-x: 0.3;
+  --start-y: 0.5;
+  --mid-x: 0.7;
+  --mid-y: 0.8;
+  --end-x: 0.9;
+  --end-y: 0.3;
+}
+.box12 {
+  width: 25px;
+  height: 25px;
+  background-color: violet;
+  --start-x: 0.2;
+  --start-y: 0.7;
+  --mid-x: 0.6;
+  --mid-y: 0.4;
+  --end-x: 0.8;
+  --end-y: 0.1;
+}
+.box13 {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  --start-x: 0.5;
+  --start-y: 0.4;
+  --mid-x: 0.9;
+  --mid-y: 0.1;
+  --end-x: 0.2;
+  --end-y: 0.9;
+}
+.box14 {
+  width: 30px;
+  height: 30px;
+  background-color: gold;
+  --start-x: 0.9;
+  --start-y: 0.2;
+  --mid-x: 0.1;
+  --mid-y: 0.6;
+  --end-x: 0.5;
+  --end-y: 0.7;
+}
+.box15 {
+  width: 10px;
+  height: 10px;
+  background-color: coral;
+  --start-x: 0.2;
+  --start-y: 0.6;
+  --mid-x: 0.5;
+  --mid-y: 0.9;
+  --end-x: 0.8;
+  --end-y: 0.3;
+}
+.box16 {
+  width: 25px;
+  height: 25px;
+  background-color: aqua;
+  --start-x: 0.3;
+  --start-y: 0.5;
+  --mid-x: 0.7;
+  --mid-y: 0.8;
+  --end-x: 0.9;
+  --end-y: 0.2;
+}
+.box17 {
+  width: 15px;
+  height: 15px;
+  background-color: magenta;
+  --start-x: 0.7;
+  --start-y: 0.8;
+  --mid-x: 0.2;
+  --mid-y: 0.3;
+  --end-x: 0.4;
+  --end-y: 0.9;
+}
+.box18 {
+  width: 20px;
+  height: 20px;
+  background-color: silver;
+  --start-x: 0.1;
+  --start-y: 0.3;
+  --mid-x: 0.9;
+  --mid-y: 0.5;
+  --end-x: 0.4;
+  --end-y: 0.8;
+}
+.box19 {
+  width: 30px;
+  height: 30px;
+  background-color: mint;
+  --start-x: 0.8;
+  --start-y: 0.4;
+  --mid-x: 0.2;
+  --mid-y: 0.7;
+  --end-x: 0.6;
+  --end-y: 0.2;
+}
+.box20 {
+  width: 10px;
+  height: 10px;
+  background-color: cyan;
+  --start-x: 0.6;
+  --start-y: 0.6;
+  --mid-x: 0.5;
+  --mid-y: 0.2;
+  --end-x: 0.9;
+  --end-y: 0.9;
+}
